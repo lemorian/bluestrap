@@ -32,3 +32,75 @@ function add_child_theme_textdomain() {
     load_child_theme_textdomain( 'understrap-child', get_stylesheet_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
+
+function register_additional_childtheme_sidebars() {
+    register_sidebar(
+        array(
+            'name'          => __( 'Top Full', 'understrap' ),
+            'id'            => 'statichero',
+            'description'   => __( 'Full top widget with dynamic grid', 'understrap' ),
+            'before_widget' => '<div id="%1$s" class="footer-widget %2$s dynamic-classes">',
+            'after_widget'  => '</div><!-- .static-hero-widget -->',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
+
+    register_sidebar(
+        array(
+            'name'          => __( 'Footer Full', 'understrap' ),
+            'id'            => 'footerfull',
+            'description'   => __( 'Full sized footer widget with dynamic grid', 'understrap' ),
+            'before_widget' => '<div id="%1$s" class="footer-widget %2$s dynamic-classes">',
+            'after_widget'  => '</div><!-- .footer-widget -->',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
+    register_sidebar(
+        array(
+            'name'          => __( 'Header Navbar', 'understrap' ),
+            'id'            => 'header-nav',
+            'description'   => __( 'Widget in Header Menu Bar, used for Search', 'understrap' ),
+            'before_widget' => '<div class="col-2 menu-search-bar">',
+            'after_widget'  => '</div>',
+            'before_title'  => '',
+            'after_title'   => '',
+        )
+    );
+    
+
+    //Home Page Widgets Start
+    register_sidebar(
+        array(
+            'name'          => __( 'Header Page Top', 'understrap' ),
+            'id'            => 'home-page-widget-top',
+            'description'   => __( 'Widget Container for Main Carousel or any other Full Width Widget', 'understrap' ),
+            'before_widget' => ' <div class="row" id="%1$s"><div class="col  %2$s">',
+            'after_widget'  => '</div></div>',
+            'before_title'  => '',
+            'after_title'   => '',
+        )
+    );
+    
+    register_sidebar(
+        array(
+            'name'          => __( 'Home Page Center', 'understrap' ),
+            'id'            => 'home-page-widget-center',
+            'description'   => __( 'Widget Container for Directory Listing or any other  Widget', 'understrap' ),
+            'before_widget' => ' <div class="row center-widget-container" id="%1$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h4 class="home-page-widget-center-title">',
+            'after_title'   => '</h4>',
+        )
+    );
+}
+
+
+
+function register_childtheme_menus() {
+    register_nav_menu('primary-2', __( 'Primary Menu 2', 'child-theme-textdomain' ));
+  }
+  
+add_action( 'init', 'register_additional_childtheme_sidebars' );
+add_action( 'init', 'register_childtheme_menus' );
