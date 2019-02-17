@@ -19,7 +19,7 @@
   <div class="col-10">
     <h4 class="home-page-widget-center-title"><?php echo $instance['title']; ?></h4>
   </div>
-  <a  href="<?php echo get_category_link($instance['cats']);?>" class="ui button blue right hide-for-small col-1 card-button" >View all</a>
+  <a  href="<?php echo get_category_link($instance['cats']); ?>" class="ui button blue right hide-for-small col-1 card-button" >View all</a>
 </div>
 
 
