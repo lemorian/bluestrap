@@ -32,24 +32,32 @@ $container = get_theme_mod( 'understrap_container_type' );
 	</div>
 	<!--***********************Logo Header***********************-->
 	<div id="logo-navbar" class="logo-header container" >
-		
-			<!-- Your site title as branding in the menu -->
-			<?php if ( ! has_custom_logo() ) { ?>
+		<div class="row">
+			<div class="col-5">
+				<!-- Your site title as branding in the menu -->
+				<?php if ( ! has_custom_logo() ) { ?>
 
-				<?php if ( is_front_page() && is_home() ) : ?>
+					<?php if ( is_front_page() && is_home() ) : ?>
 
-					<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
+						<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
 
-				<?php else : ?>
+					<?php else : ?>
 
-					<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
+						<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
 
+					<?php endif; ?>
+
+
+					<?php } else {
+					the_custom_logo();
+					} ?><!-- end custom logo -->
+			</div>
+			<div class="col">
+				<?php if ( is_active_sidebar( 'home-page-banner-widget' ) ) : ?>
+					<?php dynamic_sidebar( 'home-page-banner-widget' ); ?>
 				<?php endif; ?>
-
-
-				<?php } else {
-				the_custom_logo();
-				} ?><!-- end custom logo -->
+			</div>
+		</div>
 		
 	</div>
 	<!-- Search Bar -->

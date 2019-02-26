@@ -94,6 +94,18 @@ function register_additional_childtheme_sidebars() {
             'after_title'   => '</h4>',
         )
     );
+
+    register_sidebar(
+        array(
+            'name'          => __( 'Banner-AD', 'understrap' ),
+            'id'            => 'home-page-banner-widget',
+            'description'   => __( 'Widget Container for Ad on Header banner', 'understrap' ),
+            'before_widget' => ' <div class="col center-widget-container" id="%1$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '',
+            'after_title'   => '',
+        )
+    );
 }
 
 
