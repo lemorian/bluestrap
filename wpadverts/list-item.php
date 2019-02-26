@@ -5,11 +5,13 @@
         <header >
         <a href="<?php the_permalink() ?>" title="<?php echo esc_attr( get_the_title() ) ?>">
                 <div class="image-holder-product">
-                    <span class="Centerer">
-                    </span>
+                    <!--<span class="Centerer">
+                    </span>-->
                     <?php if($image): ?>
-                            <img  width="150" height="150" src="<?php echo esc_attr($image) ?>" alt="" class="card-img-top,Centered"  sizes="(max-width: 150px) 100vw, 150px"/>
-                            
+                           
+                            <?php 
+                                echo get_the_post_thumbnail( get_the_ID() , 'medium', array( 'class' => 'card-img-top,Centered' ,'style'=>'margin-top:1em') );
+                            ?>
                         <?php endif; ?>
                 </div>
             </a>

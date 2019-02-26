@@ -180,7 +180,7 @@ body{
 .image-holder-product{
     position: relative;
     width:100%;
-    height:180px;
+    height:auto; 
     text-align: center; 
 }
 
@@ -204,7 +204,7 @@ body{
 
 //View All Button
 
-.ui.button ,.wpbdp-button{
+.ui.button ,.wpbdp-button,.btn-secondary{
     cursor: pointer;
     display: inline-block;
     min-height: 1em;
@@ -235,17 +235,17 @@ body{
     -webkit-tap-highlight-color: transparent;
 }
 
-.ui.blue.button, .ui.red.buttons .button ,.wpbdp-button{
+.ui.blue.button, .ui.red.buttons .button ,.wpbdp-button,.btn-secondary{
     background-color:$red;
     color: #FFF;
     text-shadow: none;
     background-image: none;
 }
 
-.ui.blue.button, .ui.blue.buttons .button ,.wpbdp-button{
+.ui.blue.button, .ui.blue.buttons .button ,.wpbdp-button,.btn-secondary{
     background-color:$red;
 }
-.ui.blue.button,.wpbdp-button {
+.ui.blue.button,.wpbdp-button ,.btn-secondary{
     box-shadow: 0 0 0 0 rgba(34,36,38,.15) inset;
 }
 
