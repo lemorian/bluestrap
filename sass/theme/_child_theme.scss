@@ -11,6 +11,7 @@
         max-width: 1700px;
     }
 }
+
 body{
     background-color: $secondary !important;
     color: $font-color-grey;
@@ -19,16 +20,16 @@ body{
 //Common Utils
 .hide-widget-title >H4{
     display: none !important;
-}
+} 
 
 //Header Styles
 
 @media (min-width: 768px) {
     .logo-header{
         width: 70%;
-        margin: auto;
+        margin: auto; 
     };
-
+ 
     .custom-logo-link{
         width: 209px !important;
     }
@@ -64,16 +65,30 @@ body{
 #searchform .btn-primary{
     color: $font-color-grey !important;
     border:0.5em;
-    background-color: $tertiary;
+    background-color: lightgrey;
+    font-size: 0.9em;
 }
 
 #searchform .btn-primary:hover{
     color: $font-color-light !important;
-    background-color: $primary;
+    background-color: grey;
+}  
+
+#searchform .form-control{
+    border-bottom-left-radius: 0.8em;
+    border-top-left-radius: 0.8em;
+    border-width: 0px;
+    font-size:0.9em;
+}
+
+
+#searchform .input-group-append{
+    background-color:$font-color-grey;
 }
 .nav-link{
     color:$tertiary!important; 
 }
+
 
 //Social Header
 .social-header{
@@ -273,5 +288,16 @@ body{
 
 #custom_html-2 > DIV {
     width: 100%;
+}
+
+.advert-date{
+    font-size: 0.6em !important;
+}
+.advert-price{
+    font-size: 0.8em !important;
+}
+
+.card-title{
+    font-size: 1.0rem;
 }
 

@@ -110,5 +110,5 @@ $container = get_theme_mod( 'understrap_container_type' );
 	</div><!-- #wrapper-navbar end -->
 
 	<script>
-		$('#mega-menu-wrap-primary-2').addClass('col');
+		$('#mega-menu-wrap-primary').addClass('col-sm-4 col-lg-2');
 	</script>

@@ -88,7 +88,7 @@ function register_additional_childtheme_sidebars() {
             'name'          => __( 'Home Page Center', 'understrap' ),
             'id'            => 'home-page-widget-center',
             'description'   => __( 'Widget Container for Directory Listing or any other  Widget', 'understrap' ),
-            'before_widget' => ' <div class="row center-widget-container" id="%1$s">',
+            'before_widget' => ' <div class="center-widget-container" id="%1$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<h4 class="home-page-widget-center-title">',
             'after_title'   => '</h4>',

@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@media (min-width: 1280px) {
+  body {
+    font-size: 10px; } }
+
 /*!
  * Bootstrap v4.1.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -10812,11 +10816,38 @@ body {
 #searchform .btn-primary {
   color: #4A4A4A !important;
   border: 0.5em;
-  background-color: white; }
+  background-color: lightgrey;
+  font-size: 0.9em; }
 
 #searchform .btn-primary:hover {
   color: #dddddd !important;
-  background-color: #00275D; }
+  background-color: grey; }
+
+#searchform .form-control, #searchform .wpcf7 input[type=text], .wpcf7 #searchform input[type=text],
+#searchform .wpcf7 input[type=search], .wpcf7 #searchform input[type=search],
+#searchform .wpcf7 input[type=url], .wpcf7 #searchform input[type=url],
+#searchform .wpcf7 input[type=tel], .wpcf7 #searchform input[type=tel],
+#searchform .wpcf7 input[type=number], .wpcf7 #searchform input[type=number],
+#searchform .wpcf7 input[type=range], .wpcf7 #searchform input[type=range],
+#searchform .wpcf7 input[type=date], .wpcf7 #searchform input[type=date],
+#searchform .wpcf7 input[type=month], .wpcf7 #searchform input[type=month],
+#searchform .wpcf7 input[type=week], .wpcf7 #searchform input[type=week],
+#searchform .wpcf7 input[type=time], .wpcf7 #searchform input[type=time],
+#searchform .wpcf7 input[type=datetime], .wpcf7 #searchform input[type=datetime],
+#searchform .wpcf7 input[type=datetime-local], .wpcf7 #searchform input[type=datetime-local],
+#searchform .wpcf7 input[type=color], .wpcf7 #searchform input[type=color],
+#searchform .wpcf7 input[type=email], .wpcf7 #searchform input[type=email],
+#searchform .wpcf7 input[type=file], .wpcf7 #searchform input[type=file],
+#searchform .wpcf7 input[type=submit], .wpcf7 #searchform input[type=submit],
+#searchform .wpcf7 select, .wpcf7 #searchform select,
+#searchform .wpcf7 textarea, .wpcf7 #searchform textarea, #searchform .wpcf7 .wpcf7-validation-errors, .wpcf7 #searchform .wpcf7-validation-errors {
+  border-bottom-left-radius: 0.8em;
+  border-top-left-radius: 0.8em;
+  border-width: 0px;
+  font-size: 0.9em; }
+
+#searchform .input-group-append {
+  background-color: #4A4A4A; }
 
 .nav-link {
   color: white !important; }
@@ -10900,7 +10931,7 @@ body {
 .image-holder-product {
   position: relative;
   width: 100%;
-  height: 180px;
+  height: auto;
   text-align: center; }
 
 .Centerer {
@@ -10915,7 +10946,7 @@ body {
 .entry-summary > P > .understrap-read-more-link {
   display: none; }
 
-.ui.button {
+.ui.button, .wpbdp-button, .btn-secondary {
   cursor: pointer;
   display: inline-block;
   min-height: 1em;
@@ -10949,16 +10980,16 @@ body {
   will-change: '';
   -webkit-tap-highlight-color: transparent; }
 
-.ui.blue.button, .ui.red.buttons .button {
+.ui.blue.button, .ui.red.buttons .button, .wpbdp-button, .btn-secondary {
   background-color: #90201f;
   color: #FFF;
   text-shadow: none;
   background-image: none; }
 
-.ui.blue.button, .ui.blue.buttons .button {
+.ui.blue.button, .ui.blue.buttons .button, .wpbdp-button, .btn-secondary {
   background-color: #90201f; }
 
-.ui.blue.button {
+.ui.blue.button, .wpbdp-button, .btn-secondary {
   -webkit-box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
           box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset; }
 
@@ -10970,5 +11001,20 @@ body {
   font-size: 1.5em;
   content: '\f0c9';
   margin-top: 0.08em; }
+
+#custom_html-2 > .home-page-widget-center-title {
+  width: 100%; }
+
+#custom_html-2 > DIV {
+  width: 100%; }
+
+.advert-date {
+  font-size: 0.6em !important; }
+
+.advert-price {
+  font-size: 0.8em !important; }
+
+.card-title {
+  font-size: 1.0rem; }
 
 /*# sourceMappingURL=child-theme.css.map */

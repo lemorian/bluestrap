@@ -16,10 +16,10 @@
 <?php endif; ?>
 <div>
 <div class="row">
-  <div class="col-6 col-lg-10">
+  <div class="col-6 col-lg-9">
     <h4 class="home-page-widget-center-title"><?php echo $instance['title']; ?></h4>
   </div>
-  <a  href="<?php echo get_category_link($instance['cats']); ?>" class="ui button blue right hide-for-small col-4 col-lg-1 card-button" >View all</a>
+  <a  href="<?php echo get_category_link($instance['cats']); ?>" class="ui button blue right hide-for-small col-4 col-lg-2 card-button" >View all</a>
 </div>
 
 

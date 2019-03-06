@@ -42,7 +42,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="<?php echo esc_attr( $container ); ?>">
 	
 	<div class="row text-center text-xs-center text-sm-left text-md-left footer-vertical-menu-container">
-		<div class="col-xs-12 col-sm-1 col-md-1 ">
+		<div class="col-xs-12 col-sm-2 col-md-2 ">
 			<ul class="list-unstyled quick-links">
 				<li><a href="list-of-companies/"><i class="fa fa-angle-double-right"></i>A-Z Companies</a></li>
 				<li><a href="login"><i class="fa fa-angle-double-right"></i>Sign in / Register</a></li>
@@ -50,7 +50,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Useful links</a></li>
 			</ul>
 		</div>
-		<div class="col-xs-12 col-sm-1 col-md-1">
+		<div class="col-xs-12 col-sm-2 col-md-2">
 			<ul class="list-unstyled quick-links">
 				<li><a href="add-product"><i class="fa fa-angle-double-right"></i>Add a product</a></li>
 				<li><a href="list-of-companies/?wpbdp_view=submit_listing/"><i class="fa fa-angle-double-right"></i>Add a company</a></li>
@@ -58,7 +58,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<li><a href="mailto:info@masterbuildafrica.com"><i class="fa fa-angle-double-right"></i>Subscribe to Newsletter</a></li>
 			</ul>
 		</div>
-		<div class="col-xs-12 col-sm-1 col-md-1">
+		<div class="col-xs-12 col-sm-2 col-md-2">
 			<ul class="list-unstyled quick-links">
 				<li><a href="aboutus"><i class="fa fa-angle-double-right"></i>About us</a></li>
 				<li><a href="privacy-statement/"><i class="fa fa-angle-double-right"></i>Privacy policy</a></li>
