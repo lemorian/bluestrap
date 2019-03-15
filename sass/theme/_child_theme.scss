@@ -6,12 +6,20 @@
     }
 }
 
+@media (min-width: 576px)  and (orientation:landscape) {
+    .container {
+        max-width: 98%;
+    }
+    .advert-price {
+        font-size: .6em!important;
+    }
+}
 @media (min-width: 1700px){
     .container {
         max-width: 1700px;
     }
 }
-
+ 
 body{
     background-color: $secondary !important;
     color: $font-color-grey;
@@ -291,13 +299,21 @@ body{
 }
 
 .advert-date{
-    font-size: 0.6em !important;
+    font-size: 0.6em;
+    /* float: left; */
 }
 .advert-price{
-    font-size: 0.8em !important;
+    font-size: 0.8em;
+   /*  float: right;
+    position: static !important; */
 }
 
 .card-title{
     font-size: 1.0rem;
+    color: $primary;
 }
 
+.product-footer{
+    background-color: transparent; 
+    border-top: none; 
+}

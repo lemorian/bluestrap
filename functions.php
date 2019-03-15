@@ -62,7 +62,7 @@ function register_additional_childtheme_sidebars() {
             'name'          => __( 'Header Navbar', 'understrap' ),
             'id'            => 'header-nav',
             'description'   => __( 'Widget in Header Menu Bar, used for Search', 'understrap' ),
-            'before_widget' => '<div class="col-3 menu-search-bar">',
+            'before_widget' => '<div class="col-7 col-sm-7 col-lg-4  menu-search-bar">',
             'after_widget'  => '</div>',
             'before_title'  => '',
             'after_title'   => '',

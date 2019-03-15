@@ -10,7 +10,24 @@
 ?>
 
 <?php do_action( "adverts_sh_list_before", $params ) ?>
+<?php 
+    $locatioData  = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='.$_SERVER['REMOTE_ADDR']));
+    $currencySymbol = '$';
+    $currencyConveryRatio = 1;
 
+    
+    if($locatioData['geoplugin_currencySymbol'] != NULL){
+        $currencySymbol = $locatioData['geoplugin_currencySymbol'];
+    }
+
+    if($locatioData['geoplugin_currencyConverter'] != NULL && $locatioData['geoplugin_currencyConverter'] != 0){
+        $currencyConveryRatio = $locatioData['geoplugin_currencyConverter'];
+    }
+
+
+    
+
+?>
 <?php if( $search_bar == "enabled" ): ?>
 <div class="adverts-options">
     <form action="<?php echo esc_attr( $action ) ?>" class="adverts-search-form" method="get">

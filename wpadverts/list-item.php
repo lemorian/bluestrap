@@ -18,21 +18,29 @@
         </header>
         <div class="card-body">
             <h5 class="card-title">
-                <?php echo esc_attr( get_the_title() ) ?>
+                <?php echo esc_attr( get_the_title() ) ?> 
             </h5>
-            <span class="advert-date"><?php echo date_i18n( get_option( 'date_format' ), get_post_time( 'U', false, get_the_ID() ) ) ?></span>
+            
 
             <?php $location = get_post_meta( get_the_ID(), "adverts_location", true ) ?>
             <?php if( ! empty( $location ) ): ?>
-            <span class="advert-item-col-1-only advert-location adverts-icon-location"><?php echo esc_html( $location ) ?></span>
-            <?php endif; ?>
-
-            <?php $price = get_post_meta( get_the_ID(), "adverts_price", true ) ?>
-            <?php if( $price ): ?>
-            <div class="advert-price"><?php echo esc_html( adverts_get_the_price( get_the_ID(), $price ) ) ?></div>
-            <?php elseif( adverts_config( 'empty_price' ) ): ?>
-            <div class="advert-price adverts-price-empty"><?php echo esc_html( adverts_empty_price( get_the_ID() ) ) ?></div>
+            
             <?php endif; ?>
     </div> 
+    <div  class="row card-footer product-footer ">
+                <span class="advert-date col-5"><?php echo date_i18n( get_option( 'date_format' ), get_post_time( 'U', false, get_the_ID() ) ) ?></span>
+                <div class="col-7">
+                    <?php $price = get_post_meta( get_the_ID(), "adverts_price", true ) ?>
+                    <?php 
+                        $convertedPrice =  money_format($currencySymbol.' %i', ($price*$currencyConveryRatio));
+                        //echo $convertedPrice;
+                    ?>
+                    <?php if( $price ): ?>
+                    <div class="advert-price"><?php echo esc_html( $convertedPrice ) ?></div>
+                    <?php elseif( adverts_config( 'empty_price' ) ): ?>
+                    <div class="advert-price adverts-price-empty"><?php echo esc_html( adverts_empty_price( get_the_ID() ) ) ?></div>
+                    <?php endif; ?>
+                </div>
+    </div>
 </div>
 
