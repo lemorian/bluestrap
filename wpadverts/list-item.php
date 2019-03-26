@@ -28,8 +28,8 @@
             <?php endif; ?>
     </div> 
     <div  class="row card-footer product-footer ">
-                <span class="advert-date col-5"><?php echo date_i18n( get_option( 'date_format' ), get_post_time( 'U', false, get_the_ID() ) ) ?></span>
-                <div class="col-7">
+              <!--   <span class="advert-date col-5"><?php //echo date_i18n( get_option( 'date_format' ), get_post_time( 'U', false, get_the_ID() ) ) ?></span> -->
+                <div class="col">
                     <?php $price = get_post_meta( get_the_ID(), "adverts_price", true ) ?>
                     <?php 
                         $convertedPrice =  money_format($currencySymbol.' %i', ($price*$currencyConveryRatio));

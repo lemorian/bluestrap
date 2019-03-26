@@ -43,6 +43,7 @@ body{
     }
     
 } 
+
   
 @media (max-width: 767px) {
     .logo-header{
@@ -53,8 +54,16 @@ body{
     .custom-logo-link{
         width: 109px !important;
     }
+   
     
 }
+
+@media screen and (max-width: 782px){
+    html{
+        font-size: 10px;
+    }    
+}
+
  
 
 //Menu Styles

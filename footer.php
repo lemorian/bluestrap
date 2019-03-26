@@ -54,7 +54,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<ul class="list-unstyled quick-links">
 				<li><a href="add-product"><i class="fa fa-angle-double-right"></i>Add a product</a></li>
 				<li><a href="list-of-companies/?wpbdp_view=submit_listing/"><i class="fa fa-angle-double-right"></i>Add a company</a></li>
-				<li><a href="subscription-package-new/#1513719599597-0d8fdef7-cb3b/"><i class="fa fa-angle-double-right"></i>Advertise</a></li>
+				<li><a href="advertisement-rates"><i class="fa fa-angle-double-right"></i>Advertise</a></li>
 				<li><a href="mailto:info@masterbuildafrica.com"><i class="fa fa-angle-double-right"></i>Subscribe to Newsletter</a></li>
 			</ul>
 		</div>
